@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.deactive{
+  display:none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active{
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myInput_box input{
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myInput_boxmain{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 50px 0;
+  align-items: center;
+}
+.myInput_box button{
+  padding: 10px;
+  width: 100px;
+}
+.myInput_box{
+  margin: 0 10px;
+}
+.myInput_edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.myInput_box_edit .myInput_icon{
+  cursor: pointer;
+}
+.myInput_box_edit{
+  margin: 0 5px;
+}
+.myInput_box h2{
+  background-color: red;
+  width: 200px;
+  height: auto;
+  text-align: center;
   color: white;
+  padding: 10px;
+}
+.myInput_box_edit input{
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width:600px) {
+  .myInput_box input{
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
   }
 }
